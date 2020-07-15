@@ -1,24 +1,16 @@
 <template>
-  <div> 
     <div class="todo" >
      {{ text }}
      <button  @click="$emit('delete')" >del</button>
     </div>
-
-  </div>
 </template>
-
 <script>
 import { mapGetters } from "vuex";
-
 export default {
   name: "Todo",
-  props: {
-      text: { type: String, default: '',  },
-    },
+  props: {  text: { type: String, default: '',  },  },
 };
 </script>
-
 <style scoped>
 .todo{
   padding-top:10px;
