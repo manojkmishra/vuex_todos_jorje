@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  /**====== Fonts ======**/
+  
+  @font-face {
+    font-family: "ISWM";
+    src: url("../fonts/ISWM.woff2") format("woff2");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ISWB";
+    src: url("../fonts/ISWB.woff2") format("woff2");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ISW";
+    src: url("../fonts/ISW.woff2") format("woff2");
+    font-style: normal;
+  }
+  
+  /**====== selection ======**/
+  
+  ::selection {
+    color: #a29bfe;
+    -webkit-text-shadow: 0px 5px 15px #a29bfe;
+    -moz-text-shadow: 0px 5px 15px #a29bfe;
+    text-shadow: 0px 5px 15px #a29bfe;
+  }
+  
+  /**====== html and body ======**/
+  
+  html {
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0 auto;
+    vertical-align: baseline;
+    direction: rtl;
+  }
+  
+  /**====== main ======**/
+  
+  .main {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .main-box {
+    margin: 100px auto;
+    position: relative;
+    padding: 25px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 20px 40px 10px rgba(241, 241, 250, 0.7);
+    -moz-box-shadow: 0px 20px 40px 10px rgba(241, 241, 250, 0.7);
+    box-shadow: 0px 20px 40px 10px rgba(241, 241, 250, 0.7);
+  }
+  
+  .space {
+    padding: 25px 30px;
+  }
+  
+  .line {
+    border-left: 2px solid #eaeaea;
+  }
+  
+  /**====== form ======**/
+  
+  form label {
+    font-family: "ISWM", sans-serif;
+    font-size: 15px;
+  }
+  
+  form input[type="text"] {
+    background: #f2f5fa;
+    border: 0;
+    outline: 0;
+    height: 42px;
+    font-size: 14px;
+    font-family: "ISW", sans-serif;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(242, 245, 250, 0.8);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(242, 245, 250, 0.8);
+    box-shadow: 0px 3px 6px 0px rgba(242, 245, 250, 0.8);
+  }
+  
+  form input[type="text"]:focus {
+    border: 2px solid #acb3bb;
+    background: #ffffff;
+  }
+  
+  .send {
+    float: left;
+    padding: 8px 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: "ISWM", sans-serif;
+  }
+  
+  /**====== table ======**/
+  
+  .mt {
+    margin-right: 7px;
+    font-size: 13px;
+  }
+  
+  table th,
+  td {
+    text-align: center;
+  }
+  
+  table th {
+    font-family: "ISWB", sans-serif;
+    font-size: 1rem;
+  }
+  
+  table td {
+    font-size: 14px;
+    font-family: "ISWM", sans-serif;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background: #f7f7f7;
+  }
+  
+  /**====== responsive ======**/
+  @media screen and(max-width: 600px) {
+    table td btn {
+      display: block;
+      margin-top: 70px;
+      font-size: 30px;
+    }
+  }
+  
